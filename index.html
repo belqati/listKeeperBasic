@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>listKeeperBasic</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="light-blue lighten-3">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div id="main" class="card">
+          <div class="card-content">
+            <span class="card-title"><i class="fas fa-th-list"></i> List Keeper Basic</span>
+            <div class="row">
+              <form id="item-form">
+                <div class="input-field col s12">
+                  <input type="text" name="item" id="item">
+                  <label for="item">New Item</label>
+                </div>
+                <input type="submit" value="Add Item" class="btn light-blue darken-2">
+              </form>
+            </div>
+          </div>
+          <div class="card-action">
+            <h5 id="item-title">Item List</h5>
+            <div class="input-field col s12">
+              <input type="text" name="filter" id="filter">
+              <label for="filter">Filter Items</label>
+            </div>
+            <ul class="collection"></ul>
+            <a href="#" class="clear-items btn deep-orange darken-4">Clear Items</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
