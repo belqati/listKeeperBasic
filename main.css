@@ -2,10 +2,20 @@ span, h5, .collection-item {
   color: #01579b;
 }
 
+.collection-item {
+  font-weight: bold;
+}
+
 .input-field input {
   color: #0288d1;
 }
 
-.fa-times {
+.deleteItem {
   color: #bf360c;
+}
+
+.submitBtn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }

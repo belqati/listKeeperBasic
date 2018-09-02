@@ -36,7 +36,7 @@ function addItem(e){
   // add class
   link.className = 'delete-item secondary-content';
   // add icon html
-  link.innerHTML = '<i class="fas fa-times"></i>';
+  link.innerHTML = '<i class="deleteItem fas fa-times"></i>';
   // append link
   li.appendChild(link);
   // append li to ul
