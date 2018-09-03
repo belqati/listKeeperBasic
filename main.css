@@ -14,8 +14,21 @@ span, h5, .collection-item {
   color: #bf360c;
 }
 
+.deleteItem:hover {
+  text-shadow: 0 1px 0 #bf360c;
+  font-size: 1.5rem;
+  transition: .3s;
+}
+
 .submitBtn {
   height: 50px;
   width: 50px;
   border-radius: 50%;
+}
+
+#noMatchMessage, #noList {
+  display: none;
+  padding: 10px;
+  color: #0288d1;
+  
 }
