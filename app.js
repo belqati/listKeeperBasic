@@ -129,26 +129,17 @@ function removeItem(e){
 
 // remove item from local storage
 function removeFromLocalStorage(rmItem){
-  // // variable to hold local storage string/array
-  // let items;
-  // // check if local storage empty
-  // if(localStorage.getItem('items') === null){
-  //   // if yes, create array
-  //   items = [];
-  //   // if no, get array-string and parse
-  // } else {
-  //   items = JSON.parse(localStorage.getItem('items'));
-  // }
-
+  // get array-string and parse
   let items = JSON.parse(localStorage.getItem('items'));
 
-  
+  // compare textContent of target item with each item in list, on match remove one item at that index
   items.forEach(function(item, index){
     if(rmItem.textContent === item){
       items.splice(index, 1);
     }
   });
 
+  // reset local storage to new item list
   localStorage.setItem('items', JSON.stringify(items));
 }
 
@@ -196,7 +187,7 @@ function filterItems(e){
   // display noList message if no list exists to search
   if (document.querySelectorAll('.collection-item').length === 0){
     noList.style.display = 'block';
-  // display noMatchMessage if no there are no matches
+  // display noMatchMessage if there are no matches, else hide
   } else if(match === 0 && document.querySelectorAll('.collection-item').length > 0){
     noMatchMessage.style.display = 'block';
   } else {
