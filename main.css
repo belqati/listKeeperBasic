@@ -2,6 +2,10 @@ span, h5, .collection-item {
   color: #01579b;
 }
 
+.container {
+  padding-top: 30px;
+}
+
 .collection-item {
   font-weight: bold;
 }
@@ -30,5 +34,4 @@ span, h5, .collection-item {
   display: none;
   padding: 10px;
   color: #0288d1;
-  
 }
