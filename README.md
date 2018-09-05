@@ -1,6 +1,6 @@
 # listKeeperBasic
 
-*listKeeperBasic* is a list app created under the direction of [Brad Traversy](https://www.udemy.com/modern-javascript-from-the-beginning/) in his *Modern JavaScript from the Beginning* course. The app uses the following technologies:
+<img src="img/list_icon.ico" width="20px"> *listKeeperBasic* is a list app created under the direction of [Brad Traversy](https://www.udemy.com/modern-javascript-from-the-beginning/) in his *Modern JavaScript from the Beginning* course. The app uses the following technologies:
 
   * JavaScript
   * HTML
